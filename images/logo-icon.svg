@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd23f"/>
+      <stop offset="1" stop-color="#ff5a36"/>
+    </linearGradient>
+    <clipPath id="above"><rect x="0" y="0" width="200" height="112"/></clipPath>
+  </defs>
+  <!-- sun rays -->
+  <g stroke="#ffb627" stroke-width="9" stroke-linecap="round">
+    <line x1="100" y1="14" x2="100" y2="34"/>
+    <line x1="39" y1="39" x2="53" y2="53"/>
+    <line x1="161" y1="39" x2="147" y2="53"/>
+    <line x1="14" y1="100" x2="34" y2="100"/>
+    <line x1="166" y1="100" x2="186" y2="100"/>
+  </g>
+  <!-- half sun setting into the sea -->
+  <circle cx="100" cy="112" r="56" fill="url(#sun)" clip-path="url(#above)"/>
+  <!-- three waves -->
+  <g fill="none" stroke-linecap="round" stroke-width="10">
+    <path d="M22 128 Q41 114 61 128 T100 128 T139 128 T178 128" stroke="#00c2b8"/>
+    <path d="M38 150 Q55 137 72 150 T106 150 T140 150 T162 147" stroke="#00a6b4"/>
+    <path d="M58 172 Q72 161 86 172 T114 172 T142 172" stroke="#2d6cdf"/>
+  </g>
+</svg>

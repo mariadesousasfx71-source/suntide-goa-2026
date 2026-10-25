@@ -1,0 +1,59 @@
+/* 1. Laptops and everything smaller: 0px to 1280px */
+@media only screen and (min-width: 0px) and (max-width: 1280px) {
+  .hero {
+    background-position: center;
+    min-height: 85vh;
+  }
+
+  .banner {
+    background-position: center bottom;
+  }
+
+  h1 {
+    letter-spacing: 2px;
+  }
+}
+
+/* 2. Small laptops and big tablets: 769px to 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  h1 {
+    letter-spacing: 1.5px;
+  }
+}
+
+/* 3. Tablets: 641px to 768px */
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+  /* move the photo so the sunset stays in view */
+  .hero {
+    background-position: 65% center;
+    min-height: 75vh;
+  }
+
+  .banner {
+    background-position: 70% bottom;
+  }
+
+  h1 {
+    letter-spacing: 1px;
+  }
+}
+
+/* 4. Mobile phones: 0px to 640px */
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  .hero {
+    background-position: 70% center;
+    min-height: 85vh;
+  }
+
+ .banner {
+    background-position: 80% bottom;
+  }
+
+  h1 {
+    letter-spacing: 0.5px;
+  }
+}

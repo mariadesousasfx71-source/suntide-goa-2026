@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import "./responsive.css";
+@layer base {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Default values for big screens (wider than 1280px).
+     responsive.css changes them for smaller screens. */
+  h1 {
+    letter-spacing: 2px;
+  }
+
+  .hero {
+    background-position: center;
+    min-height: 85vh;
+  }
+
+  .banner {
+    background-position: center bottom;
+  }
+}
+
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* Anton is a tall poster font, used only for headings */
+h1,
+h2,
+h3 {
+  font-family: "Anton", Impact, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+/* Clicking a link like #day2 scrolls smoothly.
+   color-scheme: dark gives dark scrollbars and dark form dropdowns */
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+/* Home page hero: a black layer on top of the beach photo
+   so the white text is easy to read */
+.hero {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2)),
+    url("../images/hero.jpg");
+  background-size: cover;
+  /* keeps the hero text in the middle when responsive.css makes it taller */
+  display: grid;
+  align-content: center;
+}
+
+/* Top banner on the inner pages: sunset and waves picture */
+.banner {
+  background-color: #0a0a0a;
+  background-image: url("../images/banner-sea.svg");
+  background-size: cover;
+}

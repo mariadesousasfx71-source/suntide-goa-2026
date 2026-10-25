@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | SunTide Goa 2026</title>
+
+  <!-- Google Fonts: Anton (headings) and Inter (text) -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- output.css is made by the Tailwind CLI from css/style.css
+       (Tailwind classes + responsive.css + my own CSS) -->
+  <link rel="stylesheet" href="css/output.css">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+
+<body class="bg-neutral-950 text-white">
+
+  <!-- ========== HEADER ========== -->
+  <header class="sticky top-0 z-10 border-b border-neutral-800 bg-black">
+    <nav class="m-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-3 md:flex-row md:justify-between">
+      <a href="index.html" class="flex items-center gap-2 text-2xl font-bold">
+        <img src="images/logo-icon.svg" alt="" class="h-10 w-10">
+        <span>Sun<span class="text-orange-500">Tide</span> Goa</span>
+      </a>
+      <ul class="flex gap-5 font-semibold">
+        <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+        <li><a href="schedule.html" class="hover:text-orange-500">Schedule</a></li>
+        <li><a href="lineup.html" class="hover:text-orange-500">Lineup</a></li>
+        <li><a href="register.html" class="text-orange-500">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== PAGE BANNER ========== -->
+    <section class="banner pt-16 pb-32 text-white md:pb-44">
+      <div class="m-auto max-w-6xl px-4">
+        <p class="mb-2 font-bold uppercase tracking-widest text-orange-400">Register</p>
+        <h1 class="mb-4 text-5xl md:text-7xl">Claim your pass</h1>
+        <p class="max-w-2xl text-lg">Fill in the form below. Fields marked <span class="text-orange-300">*</span> are required.</p>
+      </div>
+    </section>
+
+    <!-- Form and info box: stacked on phones, side by side on laptops (lg) -->
+    <section class="py-16">
+      <div class="m-auto grid max-w-6xl items-start gap-8 px-4 lg:grid-cols-3">
+
+        <!--
+          No JavaScript: the browser checks the form itself.
+          required = field can't be empty
+          type="email" = must look like an email address
+          pattern = phone must be exactly 10 digits
+          When everything is correct, the form opens thank-you.html.
+        -->
+        <form action="thank-you.html" method="get" class="rounded-xl border border-neutral-800 bg-neutral-900 p-6 md:p-10 lg:col-span-2">
+
+          <div class="mb-6">
+            <label for="fullname" class="mb-1 block font-bold">Full name <span class="text-orange-500">*</span></label>
+            <input type="text" id="fullname" name="fullname" required class="w-full rounded-lg border-2 border-neutral-800 bg-neutral-900 px-4 py-3 focus:border-orange-500 focus:outline-none">
+            <p class="mt-1 text-sm text-neutral-400">As it appears on your photo ID.</p>
+          </div>
+
+          <div class="mb-6">
+            <label for="email" class="mb-1 block font-bold">Email address <span class="text-orange-500">*</span></label>
+            <input type="email" id="email" name="email" required class="w-full rounded-lg border-2 border-neutral-800 bg-neutral-900 px-4 py-3 focus:border-orange-500 focus:outline-none">
+            <p class="mt-1 text-sm text-neutral-400">We'll send your e-pass here.</p>
+          </div>
+
+          <div class="mb-6">
+            <label for="phone" class="mb-1 block font-bold">Mobile number <span class="text-sm font-normal text-neutral-400">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a 10-digit mobile number" class="w-full rounded-lg border-2 border-neutral-800 bg-neutral-900 px-4 py-3 focus:border-orange-500 focus:outline-none">
+            <p class="mt-1 text-sm text-neutral-400">10-digit number, for gate updates by SMS.</p>
+          </div>
+
+          <!-- fieldset groups the three radio buttons together.
+               target: classes highlight the pass chosen on the home page
+               (the part after # in the address, e.g. register.html#pass-vip) -->
+          <fieldset class="mb-6 rounded-lg border-2 border-neutral-800 p-4">
+            <legend class="px-1 font-bold">Ticket type <span class="text-orange-500">*</span></legend>
+            <label id="pass-general" class="mb-1 flex items-center gap-3 scroll-mt-32 rounded-lg p-2 target:bg-orange-950 target:ring-2 target:ring-orange-500">
+              <input type="radio" name="tier" value="general" required class="h-5 w-5 accent-orange-500">
+              <span><strong class="text-orange-500">General Access</strong> · ₹3,499 for 3 days</span>
+            </label>
+            <label id="pass-vip" class="mb-1 flex items-center gap-3 scroll-mt-32 rounded-lg p-2 target:bg-orange-950 target:ring-2 target:ring-orange-500">
+              <input type="radio" name="tier" value="vip" class="h-5 w-5 accent-orange-500">
+              <span><strong class="text-orange-500">Tide VIP</strong> · ₹7,999 for 3 days</span>
+            </label>
+            <label id="pass-lounge" class="flex items-center gap-3 scroll-mt-32 rounded-lg p-2 target:bg-orange-950 target:ring-2 target:ring-orange-500">
+              <input type="radio" name="tier" value="lounge" class="h-5 w-5 accent-orange-500">
+              <span><strong class="text-orange-500">Sunset Lounge</strong> · ₹14,999 for 3 days</span>
+            </label>
+          </fieldset>
+
+          <div class="mb-6">
+            <label for="quantity" class="mb-1 block font-bold">Number of passes</label>
+            <select id="quantity" name="quantity" class="w-full rounded-lg border-2 border-neutral-800 bg-neutral-900 px-4 py-3 focus:border-orange-500 focus:outline-none">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <div class="mb-6 flex items-start gap-3">
+            <input type="checkbox" id="terms" name="terms" required class="mt-1 h-5 w-5 accent-orange-500">
+            <label for="terms">I am 18 or older and I agree to the terms and conditions. <span class="text-orange-500">*</span></label>
+          </div>
+
+          <button type="submit" class="w-full rounded-full bg-orange-600 px-6 py-3 transition hover:-translate-y-1 font-bold hover:bg-orange-700 md:w-auto">Register now</button>
+        </form>
+
+        <!-- Info box -->
+        <aside class="rounded-xl border border-neutral-800 bg-neutral-900 p-6">
+          <h2 class="mb-4 text-3xl">Good to know</h2>
+          <ul class="list-disc space-y-2 pl-5">
+            <li>Entry for 18+ only; carry a government photo ID.</li>
+            <li>Passes are non-refundable but transferable until 20 December.</li>
+            <li>No outside food, drink, glass or drones.</li>
+            <li>Re-entry allowed once per day with your wristband.</li>
+            <li>Music ends at 1:00 a.m. as per local rules.</li>
+          </ul>
+          <p class="mt-5 text-sm text-neutral-400">Questions? <a href="mailto:hello@suntide.in" class="font-bold text-orange-500 underline">hello@suntide.in</a></p>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="border-t-4 border-orange-600 py-8 text-sm text-neutral-400">
+    <div class="m-auto flex max-w-6xl flex-col gap-4 px-4 md:flex-row md:justify-between">
+      <p>© 2026 SunTide Goa · Vagator Beach, Goa<br>Designed by Maria de Sousa, WsCube Tech, India</p>
+      <ul class="flex gap-4">
+        <li><a href="schedule.html" class="hover:text-orange-500">Schedule</a></li>
+        <li><a href="lineup.html" class="hover:text-orange-500">Lineup</a></li>
+        <li><a href="register.html" class="hover:text-orange-500">Register</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

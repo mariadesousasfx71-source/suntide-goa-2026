@@ -1,0 +1,13 @@
+{
+  "name": "suntide-goa",
+  "version": "1.0.0",
+  "description": "SunTide Goa 2026 festival website (Milestone 1)",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./css/style.css -o ./css/output.css",
+    "watch": "npx @tailwindcss/cli -i ./css/style.css -o ./css/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
+}
