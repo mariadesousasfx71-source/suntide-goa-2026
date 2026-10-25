@@ -6,7 +6,7 @@ Built as my Milestone 1 project for the web development course at WsCube Tech, u
 
 ## Live Demo
 
-https://suntide-goa-2026-ec4r.vercel.app
+suntide-goa.vercel.app
 
 
 ## Pages
