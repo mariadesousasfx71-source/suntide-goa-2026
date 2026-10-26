@@ -2,7 +2,7 @@
 
 A multi-page website for **SunTide Goa 2026**, a fictional three-day beach music festival at Vagator Beach, North Goa (27–29 December 2026). Visitors can read about the festival, check the schedule and lineup, compare passes, and register.
 
-Built as my Milestone 1 project for the web development course at WsCube Tech, using only **HTML, CSS and Tailwind CSS**.
+Built as my Milestone 1 project for the Full Stack Development Course at WsCube Tech, using only **HTML, CSS and Tailwind CSS**.
 
 ## Live Demo
 
