@@ -53,5 +53,5 @@ SunTide Goa is a fictional event created for a course project. The registration 
 
 ## Author
 
-**Maria de Sousa**, web development student at WsCube Tech, India
+**Maria de Sousa**, Full Stack Development student at WsCube Tech, India
 https://github.com/mariadesousasfx71-source/suntide-goa-2026
