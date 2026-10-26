@@ -67,3 +67,9 @@ html {
   background-image: url("../images/banner-sea.svg");
   background-size: cover;
 }
+
+ a:focus-visible,
+   button:focus-visible {
+     outline: 3px solid #f97316;
+     outline-offset: 3px;
+   }
