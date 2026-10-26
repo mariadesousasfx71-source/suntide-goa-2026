@@ -686,27 +686,7 @@
     }
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1280px) {
-  .hero {
-    background-position: center;
-    min-height: 85vh;
-  }
-  .banner {
-    background-position: center bottom;
-  }
-  h1 {
-    letter-spacing: 2px;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .hero {
-    min-height: 70vh;
-  }
-  h1 {
-    letter-spacing: 1.5px;
-  }
-}
-@media only screen and (min-width: 641px) and (max-width: 768px) {
+@media only screen and (min-width: 641px) {
   .hero {
     background-position: 65% center;
     min-height: 75vh;
@@ -718,16 +698,24 @@
     letter-spacing: 1px;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 640px) {
+@media only screen and (min-width: 769px) {
   .hero {
-    background-position: 70% center;
-    min-height: 85vh;
+    background-position: center;
+    min-height: 70vh;
   }
   .banner {
-    background-position: 80% bottom;
+    background-position: center bottom;
   }
   h1 {
-    letter-spacing: 0.5px;
+    letter-spacing: 1.5px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .hero {
+    min-height: 85vh;
+  }
+  h1 {
+    letter-spacing: 2px;
   }
 }
 @layer base {
@@ -736,14 +724,14 @@
     color: white;
   }
   h1 {
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
   }
   .hero {
-    background-position: center;
+    background-position: 70% center;
     min-height: 85vh;
   }
   .banner {
-    background-position: center bottom;
+    background-position: 80% bottom;
   }
 }
 body {
