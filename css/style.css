@@ -1,29 +1,26 @@
 @import "tailwindcss";
 @import "./responsive.css";
 @layer base {
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
-
+  
   a {
     text-decoration: none;
     color: white;
   }
 
-  /* Default values for big screens (wider than 1280px).
-     responsive.css changes them for smaller screens. */
+  /* Mobile-first: these are the values for phones (smallest screens).
+     responsive.css changes them as the screen gets wider (min-width). */
   h1 {
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
   }
 
   .hero {
-    background-position: center;
+    /* move the photo so the sunset stays in view on a narrow screen */
+    background-position: 70% center;
     min-height: 85vh;
   }
 
   .banner {
-    background-position: center bottom;
+    background-position: 80% bottom;
   }
 }
 
@@ -67,3 +64,9 @@ html {
   background-image: url("../images/banner-sea.svg");
   background-size: cover;
 }
+
+ a:focus-visible,
+   button:focus-visible {
+     outline: 3px solid #f97316;
+     outline-offset: 3px;
+   }
