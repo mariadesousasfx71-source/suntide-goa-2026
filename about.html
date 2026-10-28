@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | SunTide Goa 2026</title>
+
+  <!-- Google Fonts: Anton (headings) and Inter (text) -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- output.css is made by the Tailwind CLI from css/style.css
+       (Tailwind classes + responsive.css + my own CSS) -->
+  <link rel="stylesheet" href="css/output.css">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+
+<body class="bg-neutral-950 text-white">
+
+  <!-- ========== HEADER ========== -->
+  <header class="sticky top-0 z-10 border-b border-neutral-800 bg-black">
+    <nav class="m-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-3 md:flex-row md:justify-between">
+      <a href="index.html" class="flex items-center gap-2 text-2xl font-bold">
+        <img src="images/logo-icon.svg" alt="" class="h-10 w-10">
+        <span>Sun<span class="text-orange-500">Tide</span> Goa</span>
+      </a>
+      <!-- flex-wrap lets the links move to a second line on very small phones -->
+      <ul class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-semibold">
+        <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+        <li><a href="about.html" class="text-orange-500">About</a></li>
+        <li><a href="schedule.html" class="hover:text-orange-500">Schedule</a></li>
+        <li><a href="lineup.html" class="hover:text-orange-500">Lineup</a></li>
+        <li><a href="register.html" class="hover:text-orange-500">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== PAGE BANNER ========== -->
+    <section class="banner pt-16 pb-32 text-white md:pb-44">
+      <div class="m-auto max-w-6xl px-4">
+        <p class="mb-2 font-bold uppercase tracking-widest text-orange-400">About us</p>
+        <h1 class="mb-4 text-5xl md:text-7xl">Made in Goa, for the sea</h1>
+        <p class="max-w-2xl text-lg">SunTide is a beach music festival run by a small Goan team who grew up dancing on these sands.</p>
+      </div>
+    </section>
+
+    <!-- ========== OUR STORY ========== -->
+    <!-- Text and quote stack on phones, side by side on laptops (lg) -->
+    <section class="py-16">
+      <div class="m-auto grid max-w-6xl items-center gap-10 px-4 lg:grid-cols-2">
+        <div>
+          <p class="mb-2 font-bold uppercase tracking-widest text-orange-500">Our story</p>
+          <h2 class="mb-4 text-4xl md:text-5xl">It started with a speaker on the sand</h2>
+          <p class="mb-4 text-lg text-neutral-400">In 2024, a group of friends from Anjuna and Mapusa carried one speaker down to Vagator to watch the last sunset of the year. By midnight, two hundred people had joined them.</p>
+          <p class="text-lg text-neutral-400">That night became SunTide. Our idea is simple: big music, local food and a clean beach the next morning. 2026 is our first full edition, with three stages and three nights by the Arabian Sea.</p>
+        </div>
+
+        <!-- A quote block. border-l-4 draws the orange line on the left -->
+        <blockquote class="rounded-xl border-l-4 border-orange-600 bg-neutral-900 p-8">
+          <p class="mb-4 text-2xl font-semibold">"We don't want people to just visit Goa for a weekend. We want them to feel it: the music, the food and the people."</p>
+          <p class="font-bold text-orange-500">Festival Director, SunTide Goa</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ========== WHAT WE STAND FOR ========== -->
+    <section class="bg-neutral-900 py-16">
+      <div class="m-auto max-w-6xl px-4">
+        <p class="mb-2 font-bold uppercase tracking-widest text-orange-500">What we stand for</p>
+        <h2 class="mb-10 text-4xl md:text-5xl">Our three promises</h2>
+
+        <!-- 1 column on phones, 3 columns from tablet size -->
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="rounded-xl border border-neutral-800 bg-neutral-950 p-6 transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-500">
+            <img src="images/icons/shore.svg" alt="" class="mb-3 h-14 w-14">
+            <h3 class="mb-2 text-xl">Leave the beach better</h3>
+            <p class="text-neutral-400">No single-use plastic, refill stations at every stage and a volunteer clean-up every morning at 8 a.m.</p>
+          </article>
+          <article class="rounded-xl border border-neutral-800 bg-neutral-950 p-6 transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-500">
+            <img src="images/icons/food.svg" alt="" class="mb-3 h-14 w-14">
+            <h3 class="mb-2 text-xl">Support local</h3>
+            <p class="text-neutral-400">30 Goan kitchens and shacks in the food village, and local crew, drivers and security staff.</p>
+          </article>
+          <article class="rounded-xl border border-neutral-800 bg-neutral-950 p-6 transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-500">
+            <img src="images/icons/stage.svg" alt="" class="mb-3 h-14 w-14">
+            <h3 class="mb-2 text-xl">A stage for Goa's sound</h3>
+            <p class="text-neutral-400">Every day, Goan bands and DJs play next to the headliners, not just before them.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== JOURNEY (TIMELINE) ========== -->
+    <section class="py-16">
+      <div class="m-auto max-w-6xl px-4">
+        <p class="mb-2 font-bold uppercase tracking-widest text-orange-500">Our journey</p>
+        <h2 class="mb-10 text-4xl md:text-5xl">From one night to three</h2>
+
+        <!--
+          An ordered list for the timeline.
+          border-l-2 draws the line down the left side,
+          and each li has a small orange circle placed on that line.
+        -->
+        <ol class="max-w-2xl space-y-8 border-l-2 border-neutral-800 pl-8">
+          <li class="relative">
+            <span class="absolute -left-10 top-1 h-4 w-4 rounded-full bg-orange-500"></span>
+            <p class="font-bold text-orange-500">December 2024</p>
+            <h3 class="mb-1 text-2xl">The first sunset party</h3>
+            <p class="text-neutral-400">One speaker, two hundred people and a promise to come back.</p>
+          </li>
+          <li class="relative">
+            <span class="absolute -left-10 top-1 h-4 w-4 rounded-full bg-orange-500"></span>
+            <p class="font-bold text-orange-500">2025</p>
+            <h3 class="mb-1 text-2xl">Talking to the village</h3>
+            <p class="text-neutral-400">We met the Vagator panchayat, shack owners and fishermen to plan a festival that works for everyone.</p>
+          </li>
+          <li class="relative">
+            <span class="absolute -left-10 top-1 h-4 w-4 rounded-full bg-orange-500"></span>
+            <p class="font-bold text-orange-500">June 2026</p>
+            <h3 class="mb-1 text-2xl">Lineup announced</h3>
+            <p class="text-neutral-400">40+ artists across the Tide, Horizon and Shack stages.</p>
+          </li>
+          <li class="relative">
+            <span class="absolute -left-10 top-1 h-4 w-4 rounded-full bg-white"></span>
+            <p class="font-bold text-orange-500">27–29 December 2026</p>
+            <h3 class="mb-1 text-2xl">SunTide Goa, Season 1</h3>
+            <p class="text-neutral-400">Three nights, three stages and 25,000 fans on one shoreline.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== TEAM ========== -->
+    <section class="bg-neutral-900 py-16">
+      <div class="m-auto max-w-6xl px-4">
+        <p class="mb-2 font-bold uppercase tracking-widest text-orange-500">The team</p>
+        <h2 class="mb-10 text-4xl md:text-5xl">The people behind SunTide</h2>
+
+        <!-- 1 column on phones, 2 on tablets, 4 on laptops.
+             The orange circles show initials instead of photos -->
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-xl border border-neutral-800 bg-neutral-950 p-6 text-center transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-500">
+            <p class="m-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-orange-600 text-2xl font-bold">AF</p>
+            <h3 class="mb-1 text-xl">Anika Fernandes</h3>
+            <p class="text-sm font-bold text-orange-500">Festival Director</p>
+          </article>
+          <article class="rounded-xl border border-neutral-800 bg-neutral-950 p-6 text-center transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-500">
+            <p class="m-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-orange-600 text-2xl font-bold">RN</p>
+            <h3 class="mb-1 text-xl">Rohan Naik</h3>
+            <p class="text-sm font-bold text-orange-500">Music &amp; Bookings</p>
+          </article>
+          <article class="rounded-xl border border-neutral-800 bg-neutral-950 p-6 text-center transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-500">
+            <p class="m-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-orange-600 text-2xl font-bold">SC</p>
+            <h3 class="mb-1 text-xl">Sneha Costa</h3>
+            <p class="text-sm font-bold text-orange-500">Food Village Lead</p>
+          </article>
+          <article class="rounded-xl border border-neutral-800 bg-neutral-950 p-6 text-center transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-orange-500">
+            <p class="m-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-orange-600 text-2xl font-bold">VD</p>
+            <h3 class="mb-1 text-xl">Vikram D'Souza</h3>
+            <p class="text-sm font-bold text-orange-500">Green Team</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <!-- <details> and <summary> open and close on click with plain HTML, no JavaScript -->
+    <section class="py-16">
+      <div class="m-auto max-w-3xl px-4">
+        <p class="mb-2 font-bold uppercase tracking-widest text-orange-500">FAQ</p>
+        <h2 class="mb-8 text-4xl md:text-5xl">Good to know</h2>
+
+        <div class="space-y-4">
+          <details class="rounded-xl border border-neutral-800 bg-neutral-900 p-5 open:border-orange-500">
+            <summary class="cursor-pointer text-lg font-bold">Is there an age limit?</summary>
+            <p class="mt-3 text-neutral-400">Yes. SunTide is 18+ only. Please bring a photo ID to the gate.</p>
+          </details>
+          <details class="rounded-xl border border-neutral-800 bg-neutral-900 p-5 open:border-orange-500">
+            <summary class="cursor-pointer text-lg font-bold">Can I buy a pass for one day only?</summary>
+            <p class="mt-3 text-neutral-400">No. All passes cover all three days. See the passes on the <a href="index.html#passes" class="font-bold text-orange-500 hover:underline">home page</a>.</p>
+          </details>
+          <details class="rounded-xl border border-neutral-800 bg-neutral-900 p-5 open:border-orange-500">
+            <summary class="cursor-pointer text-lg font-bold">Can I bring my own food and drinks?</summary>
+            <p class="mt-3 text-neutral-400">Only an empty reusable bottle. You can fill it for free at the water refill stations.</p>
+          </details>
+          <details class="rounded-xl border border-neutral-800 bg-neutral-900 p-5 open:border-orange-500">
+            <summary class="cursor-pointer text-lg font-bold">How do I get to Vagator?</summary>
+            <p class="mt-3 text-neutral-400">Festival shuttles run from Mapusa and Panaji every 30 minutes. Parking is for two-wheelers only.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CALL TO ACTION ========== -->
+    <section class="bg-orange-700 py-16 text-center">
+      <div class="m-auto max-w-6xl px-4">
+        <h2 class="mb-4 text-4xl md:text-5xl">See you on the sand</h2>
+        <p class="mb-8 text-lg font-semibold">27–29 December 2026 · Vagator Beach, Goa</p>
+        <a href="register.html" class="inline-block rounded-full bg-black px-6 py-3 font-bold transition hover:-translate-y-1 hover:bg-neutral-900">Get your pass</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="border-t-4 border-orange-600 py-8 text-sm text-neutral-400">
+    <div class="m-auto flex max-w-6xl flex-col gap-4 px-4 md:flex-row md:justify-between">
+      <p>© 2026 SunTide Goa · Vagator Beach, Goa<br>Designed by Maria de Sousa, WsCube Tech, India</p>
+      <ul class="flex gap-4">
+        <li><a href="about.html" class="hover:text-orange-500">About</a></li>
+        <li><a href="schedule.html" class="hover:text-orange-500">Schedule</a></li>
+        <li><a href="lineup.html" class="hover:text-orange-500">Lineup</a></li>
+        <li><a href="register.html" class="hover:text-orange-500">Register</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

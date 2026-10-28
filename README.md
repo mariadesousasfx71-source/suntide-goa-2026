@@ -1,6 +1,6 @@
 # SunTide Goa 2026
 
-A multi-page website for **SunTide Goa 2026**, a fictional three-day beach music festival at Vagator Beach, North Goa (27–29 December 2026). Visitors can read about the festival, check the schedule and lineup, compare passes, and register.
+A multi-page website for **SunTide Goa 2026**, a fictional three-day beach music festival at Vagator Beach, North Goa (27–29 December 2026). Visitors can read about the festival and the team behind it, check the schedule and lineup, compare passes, and register.
 
 Built as my Milestone 1 project for the Full Stack Development Course at WsCube Tech, using only **HTML, CSS and Tailwind CSS**.
 
@@ -14,10 +14,26 @@ https://suntide-goa.vercel.app
 | Page | What it shows |
 | --- | --- |
 | `index.html` | Hero, quick facts, festival highlights, pass prices, venue map and sponsors |
+| `about.html` | The festival's story, its three promises, a timeline, the team and an FAQ |
 | `schedule.html` | Day-wise timetable for all three days, with "jump to day" links |
 | `lineup.html` | Artist cards with genre, day, time and stage |
 | `register.html` | Registration form and festival rules |
 | `thank-you.html` | Confirmation page shown after the form is filled in correctly |
+
+
+## Screenshots
+
+| Home (desktop) | About (desktop) |
+| --- | --- |
+| ![Home page on desktop](images/screenshots/Desktop.png.jpeg) | ![About page on desktop](images/screenshots/About.jpeg) |
+
+| Schedule | Lineup | Register |
+| --- | --- | --- |
+| ![Schedule page](images/screenshots/schedule.png.jpeg) | ![Lineup page](images/screenshots/Lineup.png.jpeg) | ![Register page](images/screenshots/Register.png.jpeg) |
+
+| Home (mobile) |
+| --- |
+| <img src="images/screenshots/Mobile.png.jpeg" alt="Home page on a phone" width="300"> |
 
 
 ## How to Run Locally
